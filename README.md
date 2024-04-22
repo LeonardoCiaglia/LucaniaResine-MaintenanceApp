@@ -32,7 +32,7 @@ Se sei un manutentore/responsabile tecnico puoi visualizzare l'elenco delle segn
 In caso di problemi durante l'utilizzo dell'applicazione, controlla i seguenti punti:
 - Se non riesci ad accedere ai pannelli successivi vuol dire che non hai i permessi per fare delle segnalazioni.
 - Verifica che il file delle credenziali degli account sia presente nel percorso specificato.
-# Risoluzione dei Problemi per i manutentori/responsabili tecnici
+## Risoluzione dei Problemi per i manutentori/responsabili tecnici
 Se, dopo aver premuto il pulsante "Segnala", non succede nulla, prova a fare clic su una cella vuota. Questo dovrebbe risolvere il problema.
 
 ## Contatti e Supporto
