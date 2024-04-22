@@ -1,0 +1,12 @@
+Dc71;01010101;manutentore;true
+Rl73;02020202;manutentore;true
+Gs80;03030303;responsabile_tecnico;true
+Eg67;04040404;responsabile_tecnico;true
+Vl77;05050505;responsabile_di_reparto;false  +aggiungere+ Corrugato
+Pg78;06060606;responsabile_di_reparto;false  +aggiungere+ PVC
+Gf82;07070707;responsabile_di_reparto;false  +aggiungere+ Rotazionale
+Gr84;08080808;responsabile_di_reparto;false  +aggiungere+ Polietilene
+Gt77;11111111;capoturno;false +aggiungere+ Corrugato
+Mb78;10101010;capoturno;false +aggiungere+ PVC
+Cr86;12121212;capoturno;false +aggiungere+ Rotazionale
+Ac72;09090909;capoturno;false +aggiungere+ Polietilene
