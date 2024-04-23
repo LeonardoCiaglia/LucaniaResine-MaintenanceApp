@@ -1,8 +1,8 @@
 
-# Manuale d'Uso per Lucania Resine Manutenzioni
+# Manuale d'Uso per Lucania Resine - App Manutenzione
 
 ## Introduzione
-Benvenuto nell'applicazione Lucania Resine Maintenance App! Questa guida ti accompagnerà attraverso le funzionalità e l'utilizzo di questa applicazione per la gestione delle segnalazioni di manutenzione.
+Benvenuto nell'applicazione Lucania Resine - App Manutenzione! Questa guida ti accompagnerà attraverso le funzionalità e l'utilizzo di questa applicazione per la gestione delle segnalazioni di manutenzione.
 
 ## Requisiti di Sistema
 Per utilizzare l'applicazione Lucania Resine Maintenance App, è necessario avere installato:
@@ -10,7 +10,7 @@ Per utilizzare l'applicazione Lucania Resine Maintenance App, è necessario aver
 - Sistema operativo compatibile con Java.
 
 ## Installazione
-1. Scarica il file eseguibile dell'applicazione dalla repository git hub https://github.com/LeonardoCiaglia/LucaniaResine-MaintenanceApp.
+1. Scarica il file eseguibile dell'applicazione dalla repository git hub https://github.com/LeonardoCiaglia/Lucania Resine.
 2. Esegui il file scaricato per avviare l'applicazione.
 
 ## Interfaccia Utente
@@ -32,7 +32,7 @@ Se sei un manutentore/responsabile tecnico puoi visualizzare l'elenco delle segn
 In caso di problemi durante l'utilizzo dell'applicazione, controlla i seguenti punti:
 - Se non riesci ad accedere ai pannelli successivi vuol dire che non hai i permessi per fare delle segnalazioni.
 - Verifica che il file delle credenziali degli account sia presente nel percorso specificato.
-## Risoluzione dei Problemi per i manutentori/responsabili tecnici
+# Risoluzione dei Problemi per i manutentori/responsabili tecnici
 Se, dopo aver premuto il pulsante "Segnala", non succede nulla, prova a fare clic su una cella vuota. Questo dovrebbe risolvere il problema.
 
 ## Contatti e Supporto

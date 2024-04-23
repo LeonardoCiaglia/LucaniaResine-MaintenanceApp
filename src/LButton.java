@@ -66,7 +66,7 @@ class LButton extends JButton implements ActionListener {
 
     // Funzione per confrontare le credenziali inserite con quelle nel file
     private void checkCredentials() {
-        String AccountPath = "Lucania Resine/src/File/Accounts.csv";
+        String AccountPath = "File/Accounts.csv";
 
         try {
             File file = new File(AccountPath); // Oggetto File
@@ -116,20 +116,20 @@ class LButton extends JButton implements ActionListener {
             Object machine = model.getValueAt(i, 0);
             Object value = model.getValueAt(i, 1);
             if(value != null && !value.toString().isEmpty()){
-                V_Reports.add(new Report(machine.toString() ,value.toString()));
+                V_Reports.add(new Report(machine.toString() ,value.toString(),tfUser.getText()));
             }
         }
 
         // Controllo se ci sono elementi nel Vector
         if(V_Reports.size() > 0){
             // Codice per scrivere le segnalazioni sul file
-            try (PrintWriter writer = new PrintWriter(new FileWriter("Lucania Resine/src/File/Segnalazioni.csv", true))) {
+            try (PrintWriter writer = new PrintWriter(new FileWriter("File/Segnalazioni.csv", true))) {
                 DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"); // Formato data e ora
 
                 // for each per scrivere ogni segnalazione nel file con la data e l'ora attuali
                 for (Report report : V_Reports) {
                     String DateTime = dtf.format(LocalDateTime.now()); // Ottieni la data e l'ora attuali
-                    writer.println(tfUser.getText() +";"+ report.getMachine() +";"+ report.getReport() + ";" + DateTime +";No"); // Scrivi la segnalazione seguita dalla data e ora nel file
+                    writer.println(report.getReporter() +";"+ report.getMachine() +";"+ report.getReport() + ";" + DateTime +";No"); // Scrivi la segnalazione seguita dalla data e ora nel file
                 }
 
                 for(int i = 0; i < model.getRowCount(); i++){
@@ -147,7 +147,7 @@ class LButton extends JButton implements ActionListener {
 
     // Funzione per aprire il file delle Segnalazioni
     private void OpenReportFile(){
-        String filePath = "Lucania Resine/src/File/Segnalazioni.csv";
+        String filePath = "File/Segnalazioni.csv";
 
         try {
             File file = new File(filePath); // Oggetto File
@@ -192,7 +192,7 @@ class LButton extends JButton implements ActionListener {
     private void showReparto(String Ward,String MachineName,int nMachine){
 
         // Frame
-        LFrame Frame = new LFrame(Ward,new ImageIcon("Lucania Resine/src/img/logoAzienda.jpg"), 600, 600,true);
+        LFrame Frame = new LFrame(Ward,new ImageIcon("img/logoAzienda.jpg"), 600, 600,true);
         
         // Contenitore Intermedio
         Container contentPane = Frame.getContentPane();
@@ -223,7 +223,7 @@ class LButton extends JButton implements ActionListener {
             String[] ButtonWard = {"Corrugato", "PVC", "Rotazionale", "Polietilene", "Elenco Segnalazioni"};
 
             for(String Department: ButtonWard){
-                LButton btnWard = new LButton(Department, new Color(33, 150, 243), Color.lightGray, null, new JPasswordField(),null);
+                LButton btnWard = new LButton(Department, new Color(33, 150, 243), Color.lightGray, this.tfUser, new JPasswordField(),null);
                 btnWard.setFontDimension(20f);
                 c.gridy++;
 

@@ -10,7 +10,7 @@ import javax.swing.JPasswordField;
 class AppLR {
     public static void main(String[] args) throws Exception {
         // Frame di Login
-        LFrame LoginFrame = new LFrame("Login",new ImageIcon("Lucania Resine/src/img/logoAzienda.jpg"), 600, 600,true);
+        LFrame LoginFrame = new LFrame("Login",new ImageIcon("img/logoAzienda.jpg"), 600, 600,true);
         
         // Contenitore Intermedio
         Container contentPane = LoginFrame.getContentPane();
@@ -36,7 +36,7 @@ class AppLR {
         LoginPanel.add(lblTitle,c);
 
         // Immagine dell' Account
-        LLabel ImgAccount = new LLabel(null, new ImageIcon("Lucania Resine/src/img/Account.png"));
+        LLabel ImgAccount = new LLabel(null, new ImageIcon("img/Account.png"));
 
         c.gridy++;
 
@@ -57,7 +57,7 @@ class AppLR {
 
         LoginPanel.add(JfPassword,c);
 
-        LCheckBox showPassword = new LCheckBox(new ImageIcon ("Lucania Resine/src/img/Show.png"),JfPassword);
+        LCheckBox showPassword = new LCheckBox(new ImageIcon ("img/Show.png"),JfPassword);
         c.gridx = 1;
 
         LoginPanel.add(showPassword, c);
