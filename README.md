@@ -9,10 +9,6 @@ Per utilizzare l'applicazione Lucania Resine Maintenance App, è necessario aver
 - Java Developement Kit versione 22 .
 - Sistema operativo compatibile con Java.
 
-## Installazione
-1. Scarica il file eseguibile dell'applicazione dalla repository git hub https://github.com/LeonardoCiaglia/Lucania Resine.
-2. Esegui il file scaricato per avviare l'applicazione.
-
 ## Interfaccia Utente
 L'interfaccia utente dell'applicazione è intuitiva e facile da usare. È composta principalmente da una finestra di login e diverse schermate per la gestione delle segnalazioni di manutenzione per i vari reparti.
 
